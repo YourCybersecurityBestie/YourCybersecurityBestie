@@ -11,7 +11,7 @@ Growing up in the digital era, I have always been surrounded by technology. My e
 
 My goal is to empower women to excel in cybersecurity careers by providing the necessary tools, strategies, and support. Whether you follow my blogs, social media, and newsletters, I want you to feel empowered by what you learn and how it will elevate you in your career. As a female working in a male-dominated industry, I understand the challenges that women face in pursuing a cybersecurity career. That's why Cyber Queen was created as a platform for women to find the support and encouragement they need to succeed in this field.
 
-Join the community today and let's work together to build your future, and of course make our networks and information assets secure.
+Join my [network](https://forms.wix.com/ce65e9a0-c58f-4537-a3a7-707dae0802f9:dd8f1d1d-3cfa-43e8-ab53-7717a3dd20a4) today and let's work together to build your future, and of course make our networks and information assets secure.
 
 Skills: Cloud Security, Information Security and Governance, Network Security, Linux, Windows, Azure, Microsoft Defender for Cloud, Sentinel, Endpoint Security, Application Security, Data Security, Storage and Containerization, Encryption, Threat Intelligence and Threat Hunting, Scripting, PowerShell, Python   
 
