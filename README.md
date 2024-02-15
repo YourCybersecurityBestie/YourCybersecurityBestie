@@ -19,7 +19,10 @@ Skills: Cloud Security, Information Security and Governance, Network Security, L
 - 🌱 I’m currently learning Azure Infrastructure as Code Deployments 
 - 💬 Ask me about Cloud Security, Cybersecurity and Infosec 
 - 😄 Pronouns: She, Her 
-- ⚡ Fun fact: Sneakers are my thing!  
+- ⚡ Fun fact: Sneakers are my thing!
+
+### Access My Wiki's
+* [Cybersecurity Career Researching 🔍](https://github.com/YourCybersecurityBestie/YourCybersecurityBestie/wiki/Cybersecurity-Career-Researching-%F0%9F%94%8D)
 
 <a href='https://github.com/pricing'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/pro.gif' width='20' height='20'></a> 
 
