@@ -80,4 +80,10 @@ An alternative to VirtualBox, useful for running virtual machines.
 - **Regular Updates**: Keep your operating systems and tools updated to ensure security.
 - **Expand as Needed**: As you gain confidence, add more virtual machines or tools to your lab to explore new areas of cybersecurity.
 
-By following this guide and using the provided download links, you can set up a basic cybersecurity home lab that serves as a practical learning environment for developing your skills. This guide can be saved as a file and added to your GitHub repository as needed.
+Congratulations on taking the first steps towards mastering cybersecurity with your own home lab! Remember, the journey to becoming a cybersecurity expert is a marathon, not a sprint. Keep experimenting, stay curious, and never stop learning. As you continue to build your skills, don't forget to share your insights and join the conversation on the [Cyber Queen YouTube channel](https://www.youtube.com/@cyber.queen_) and the [Cybersecurity Besties Community](https://www.skool.com/cyberqueen/about). 
+
+Together, we can empower each other to reach new heights in the world of cybersecurity. Stay safe, stay savvy, and keep hacking the planet—responsibly, of course! Feel free to copy this text into a document file for your GitHub repository.
+
+You've got this! 
+
+_**Your Cybersecurity Bestie 🌸**_
