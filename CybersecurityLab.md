@@ -29,6 +29,12 @@ is a free and user-friendly option.
 
 - **Download VirtualBox**: [Oracle VirtualBox Download](https://www.virtualbox.org/wiki/Downloads)
 
+**VMware Workstation Player** 
+
+An alternative to VirtualBox, useful for running virtual machines. 
+
+- **Download VMware Workstation Player**: [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html)
+
 ## **Step 3: Install Virtualization Software**
 
 1. **Download VirtualBox**: Use the link above to download the software for your operating system.
