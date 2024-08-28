@@ -1,11 +1,12 @@
-## Building a Cybersecurity Home Lab: A Beginner's Guide
+# Building a Cybersecurity Home Lab: A Beginner's Guide
+
+_**Hey Friends 🌸**_
 
 Whether you're a cybersecurity enthusiast or someone looking to sharpen your skills, a home lab offers the perfect environment to experiment and learn. In this guide, I will walk you through the essential components and steps needed to set up a good foundational cybersecurity lab at home.
 
 For more in-depth tutorials and discussions, be sure to check out my YouTube channel: **[Cyber Queen](https://www.youtube.com/@cyber.queen_)** 
 
 Where my purpose is to help YOU succeed in Cybersecurity!
-
 
 You can also consider joining my Exclusive **[Cybersecurity Besties Community](https://www.skool.com/cyberqueen/about)**
 
@@ -24,13 +25,13 @@ A cybersecurity home lab is a personal setup that allows you to experiment with 
 
 ## **Step-by-Step Guide to Building Your Home Lab**
 
-## **Step 1: Gather Necessary Hardware**
+#### **Step 1: Gather Necessary Hardware**
 
 - **Computer**: At least 8GB of RAM and a multi-core processor. Aim for 16GB of RAM for better performance.
 - **Storage**: An SSD with at least 500GB of storage is recommended.
 - **Network Equipment**: Basic home networking equipment like a router is sufficient.
 
-## **Step 2: Choose Virtualization Software**
+#### **Step 2: Choose Virtualization Software**
 
 Virtualization allows you to run multiple operating systems on a single machine. For beginners,
 
@@ -46,12 +47,12 @@ An alternative to VirtualBox, useful for running virtual machines.
 
 - **Download VMware Workstation Player**: [VMware Workstation Player](https://www.vmware.com/products/workstation-player.html)
 
-## **Step 3: Install Virtualization Software**
+#### **Step 3: Install Virtualization Software**
 
 1. **Download VirtualBox**: Use the link above to download the software for your operating system.
 2. **Install VirtualBox**: Follow the installation instructions provided on the website.
 
-## **Step 4: Set Up Virtual Machines**
+#### **Step 4: Set Up Virtual Machines**
 
 1. **Download Operating System ISOs**:
     - **Kali Linux**: For penetration testing and security research. [Download Kali Linux](https://www.kali.org/get-kali/)
@@ -60,21 +61,21 @@ An alternative to VirtualBox, useful for running virtual machines.
     - Open VirtualBox and click on "New" to create a new virtual machine.
     - Follow the prompts to set up the virtual machine, selecting the appropriate ISO file when prompted.
 
-## **Step 5: Configure Your Network**
+#### **Step 5: Configure Your Network**
 
 - **Set Up a Virtual Network**: Use VirtualBox's network settings to create a virtual network. This will allow your virtual machines to communicate with each other without affecting your home network.
 
-## **Step 6: Install Security Tools**
+#### **Step 6: Install Security Tools**
 
 - **Kali Linux Tools**: Once Kali Linux is set up, explore its built-in tools like Nmap, Metasploit, and Wireshark for various security tasks.
 - **Security Onion**: Consider setting up Security Onion on another virtual machine for intrusion detection and network monitoring. [Download Security Onion](https://github.com/Security-Onion-Solutions/securityonion/releases)
 
-## **Step 7: Practice and Experiment**
+#### **Step 7: Practice and Experiment**
 
 - **Simulate Attacks**: Use your lab to simulate attacks and practice defending against them.
 - **Learn from Online Resources**: Follow tutorials and guides to expand your knowledge and try new techniques.
 
-## **Step 8: Maintain and Expand Your Lab**
+#### **Step 8: Maintain and Expand Your Lab**
 
 - **Regular Updates**: Keep your operating systems and tools updated to ensure security.
 - **Expand as Needed**: As you gain confidence, add more virtual machines or tools to your lab to explore new areas of cybersecurity.
