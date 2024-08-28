@@ -1,5 +1,16 @@
 ## Building a Cybersecurity Home Lab: A Beginner's Guide
 
+Whether you're a cybersecurity enthusiast or someone looking to sharpen your skills, a home lab offers the perfect environment to experiment and learn. In this guide, I will walk you through the essential components and steps needed to set up a good foundational cybersecurity lab at home.
+
+For more in-depth tutorials and discussions, be sure to check out my YouTube channel: **[Cyber Queen](https://www.youtube.com/@cyber.queen_)** 
+
+Where my purpose is to help YOU succeed in Cybersecurity!
+
+
+You can also consider joining my Exclusive **[Cybersecurity Besties Community](https://www.skool.com/cyberqueen/about)**
+
+In this community you can connect with like-minded individuals and participate in engaging discussions and completely level up your cybersecurity career! 
+
 ## **Purpose of a Home Lab in Cybersecurity**
 
 A cybersecurity home lab is a personal setup that allows you to experiment with cybersecurity tools and techniques in a safe and controlled environment. It is an essential resource for anyone looking to develop skills in network security, ethical hacking, penetration testing, and incident response. By practicing in a home lab, you can gain hands-on experience without the risk of damaging real-world systems.
