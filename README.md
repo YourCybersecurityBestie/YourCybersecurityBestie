@@ -9,6 +9,20 @@ Hi, I'm [**Venicia**](https://www.linkedin.com/in/veniciasolomons/), the founder
 
 With a passion for empowering women in the tech and more specifically cybersecurity industry, I created Cyber Queen to provide a supportive and resource-rich environment for aspiring and seasoned cybersecurity professionals alike. 
 
+I am a dedicated professional in cyber and cloud security. In my current role, I dabble into a bit of cloud security architecture, I am the founder of [Cyber Queen](https://www.cyberqueen.org), a CISSP, [Awarded Microsoft MVP](https://mvp.microsoft.com/en-US/mvp/profile/af437687-95fb-ed11-8f6d-000d3a560942) and a [LinkedIn Learning Instructor](https://www.linkedin.com/learning/instructors/venicia-solomons?u=0).
+
+[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='30'>](https://github.com/yourcybersecuritybestie)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='30'>](https://www.linkedin.com/in/veniciasolomons/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram' height='30'>](https://www.instagram.com/@cyber.queen_/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg' alt='YouTube' height='30'>](https://www.youtube.com/channel/@cyber.queen_)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/icloud.svg' alt='website' height='30'>](www.cyberqueen.org)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/tiktok.svg' alt='tiktok' height='30'>](https://www.tiktok.com/@cyber.queen_)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/microsoft.svg' alt='microsoft' height='30'>](https://mvp.microsoft.com/en-US/MVP/profile/af437687-95fb-ed11-8f6d-000d3a560942)  
+
+For more in-depth tutorials and discussions, be sure to check out my YouTube channel: **[Cyber Queen](https://www.youtube.com/@cyber.queen_)** 
+
+My purpose is to help YOU succeed in Cybersecurity!
+
+You can also consider joining my Exclusive **[Cybersecurity Besties Community](https://www.skool.com/cyberqueen/about)**
+
+In this community, you can connect with like-minded individuals, participate in engaging discussions and completely level up your cybersecurity career! 
+
+***
+
 #### My mission
 
 Is simple, to break barriers and create opportunities for everyone, especially women, in the field of cybersecurity. Through Cyber Queen, I aim to deliver high-quality, technical content that is both accessible and actionable.
@@ -31,9 +45,7 @@ Together, we can build a vibrant community of cybersecurity besties who support 
 
 Thank you for being a part of Cyber Queen. Let's level up your cybersecurity career together! 
 
-[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='30'>](https://github.com/yourcybersecuritybestie)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='30'>](https://www.linkedin.com/in/veniciasolomons/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram' height='30'>](https://www.instagram.com/@cyber.queen_/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg' alt='YouTube' height='30'>](https://www.youtube.com/channel/@cyber.queen_)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/icloud.svg' alt='website' height='30'>](www.cyberqueen.org)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/tiktok.svg' alt='tiktok' height='30'>](https://www.tiktok.com/@cyber.queen_)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/microsoft.svg' alt='microsoft' height='30'>](https://mvp.microsoft.com/en-US/MVP/profile/af437687-95fb-ed11-8f6d-000d3a560942)  
-
-Skills: Cloud Security, Information Security and Governance, Network Security, Linux, Windows, Azure, Microsoft Defender for Cloud, Sentinel, Endpoint Security, Application Security, Data Security, Storage and Containerization, Encryption, Threat Intelligence and Threat Hunting, Scripting, PowerShell, Python   
+**Skills: ** Cloud Security, Information Security and Governance, Network Security, Linux, Windows, Azure, Microsoft Defender for Cloud, Sentinel, Endpoint Security, Application Security, Data Security, Storage and Containerization, Encryption, Threat Intelligence and Threat Hunting, Scripting, PowerShell, Python   
 
 - 🔭 I’m currently working on Cloud Security Projects 
 - 🌱 I’m currently learning Azure Infrastructure as Code Deployments 
