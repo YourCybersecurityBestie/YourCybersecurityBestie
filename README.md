@@ -1,19 +1,37 @@
 ### Hey Friends 🌸
-##### Welcome to our cybersecurity besties space on GitHUB! This is more than just a repository; it's a heartfelt guide created to help anyone stepping into the awesome world of cybersecurity. If you're feeling a tad overwhelmed about where to begin or seeking that nudge to pivot into this ever-evolving field, guess what? You've just found your besties! 💖👩‍💻 
+##### Welcome to our cybersecurity besties space on GitHUB! A Complete set of Cybersecurity Resources shared by [Cyber Queen!](https://youtu.be/xjm2xrkRP8Y)
 
-##### I'm Venicia, a dedicated professional in cyber and cloud security. In my current role, I dabble into a bit of cloud security architecture, I am the founder of [Cyber Queen](https://www.cyberqueen.org), a CISSP, Microsoft MVP and a LinkedIn Learning Instructor.
+Hi, I'm [**Venicia**](https://www.linkedin.com/in/veniciasolomons/), the founder of Cyber Queen, the ONLY female-led technical cybersecurity platform dedicated to helping you level up your cybersecurity career!
 
+![](https://media.licdn.com/dms/image/v2/D4D16AQF3dDFXzOwVaw/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1724242739014?e=1730332800&v=beta&t=oHKwkj3h7Gevd332FSQHp7JFo2lqn63TaREmElGnFaM)
+
+#### About Me
+
+With a passion for empowering women in the tech and more specifically cybersecurity industry, I created Cyber Queen to provide a supportive and resource-rich environment for aspiring and seasoned cybersecurity professionals alike. 
+
+#### My mission
+
+Is simple, to break barriers and create opportunities for everyone, especially women, in the field of cybersecurity. Through Cyber Queen, I aim to deliver high-quality, technical content that is both accessible and actionable.
+
+I believe in the power of community and knowledge sharing. Throughout this journey, I will aim to equip you with the skills and confidence needed to excel in the demanding cybersecurity career space. Whether you're just starting out or looking to advance your career, Cyber Queen is here to support you every step of the way.
+
+#### What You Can Find Here
+
+In this repository, you'll discover a wealth of resources designed to enhance your technical skills and career prospects, including:
+
+- **Technical Cybersecurity Content:** Dive deep into the technical aspects of cybersecurity with tutorials, guides, and projects that cover a wide range of topics, from cybersecurity analysis to engineering and architecture. 
+- **Cloud Security Resources:** Stay ahead of the curve with cloud security content, designed to help you understand and implement best practices in the cloud.
+- **Career Development Tools:** Access valuable resources to help you navigate your cybersecurity career, including resume tips, interview preparation, and networking strategies.
+
+#### Join the Community
+
+I invite you to join the [Cybersecurity Exclusive Besties Community](https://www.skool.com/cyberqueen/about), explore the content, contribute to discussions, and share your own insights. 
+
+Together, we can build a vibrant community of cybersecurity besties who support and inspire each other to achieve greatness in the cybersecurity field.
+
+Thank you for being a part of Cyber Queen. Let's level up your cybersecurity career together! 
 
 [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='30'>](https://github.com/yourcybersecuritybestie)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='30'>](https://www.linkedin.com/in/veniciasolomons/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram' height='30'>](https://www.instagram.com/@cyber.queen_/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/youtube.svg' alt='YouTube' height='30'>](https://www.youtube.com/channel/@cyber.queen_)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/icloud.svg' alt='website' height='30'>](www.cyberqueen.org)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/tiktok.svg' alt='tiktok' height='30'>](https://www.tiktok.com/@cyber.queen_)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/microsoft.svg' alt='microsoft' height='30'>](https://mvp.microsoft.com/en-US/MVP/profile/af437687-95fb-ed11-8f6d-000d3a560942)  
-
-
-My journey in this field has been a blend of continuous learning and community engagement, with a focus on making cybersecurity more accessible to everyone, especially women in tech.
-
-Growing up in the digital era, I have always been surrounded by technology. My early experiences with computers involved dial-up modems, which sparked my interest in cybersecurity.Today, as the founder of Cyber Queen, I am driven to address the lack of female representation in the cybersecurity industry, which has resulted in increased vulnerability to cyber threats. I believe that we need more diversity, within all categories to make our networks and information assets secure.
-
-My goal is to empower women to excel in cybersecurity careers by providing the necessary tools, strategies, and support. Whether you follow my blogs, social media, and newsletters, I want you to feel empowered by what you learn and how it will elevate you in your career. As a female working in a male-dominated industry, I understand the challenges that women face in pursuing a cybersecurity career. That's why Cyber Queen was created as a platform for women to find the support and encouragement they need to succeed in this field.
-
-Join my [Cybersecurity Besties Community](https://www.skool.com/cyberqueen/about) today and let's work together to build your career in cybersecurity, and ofcourse make our networks and information assets secure.
 
 Skills: Cloud Security, Information Security and Governance, Network Security, Linux, Windows, Azure, Microsoft Defender for Cloud, Sentinel, Endpoint Security, Application Security, Data Security, Storage and Containerization, Encryption, Threat Intelligence and Threat Hunting, Scripting, PowerShell, Python   
 
