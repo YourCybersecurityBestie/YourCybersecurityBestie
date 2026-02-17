@@ -1,13 +1,13 @@
 ### Hey Friends 🌸
 ##### Welcome to our cybersecurity besties space on GitHUB! A Complete set of Cybersecurity Resources shared by [Cyber Queen!](https://youtu.be/xjm2xrkRP8Y)
 
-Hi, I'm [**Venicia**](https://www.linkedin.com/in/veniciasolomons/), the founder of Cyber Queen, the ONLY female-led technical cybersecurity platform dedicated to helping you level up your cybersecurity career!
+Hi, I'm [**Venicia**](https://www.linkedin.com/in/veniciasolomons/), the founder of Cyber Queen, the ONLY female-led technical cybersecurity platform dedicated to helping you level up your cloud security skills!
 
 ![](https://media.licdn.com/dms/image/v2/D4D16AQF3dDFXzOwVaw/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1724242739014?e=1730332800&v=beta&t=oHKwkj3h7Gevd332FSQHp7JFo2lqn63TaREmElGnFaM)
 
 #### About Me
 
-With a passion for empowering women in the tech and more specifically cybersecurity industry, I created Cyber Queen to provide a supportive and resource-rich environment for aspiring and seasoned cybersecurity professionals alike. 
+With a passion for empowering anyone in the tech and more specifically cybersecurity industry, I created Cyber Queen to provide a supportive and resource-rich environment for aspiring and seasoned cybersecurity professionals alike. 
 
 I am a dedicated professional in cyber and cloud security. In my current role, I dabble into a bit of cloud security architecture, I am the founder of [Cyber Queen](https://www.cyberqueen.org), a CISSP, [Awarded Microsoft MVP](https://mvp.microsoft.com/en-US/mvp/profile/af437687-95fb-ed11-8f6d-000d3a560942) and a [LinkedIn Learning Instructor](https://www.linkedin.com/learning/instructors/venicia-solomons?u=0).
 
@@ -39,7 +39,7 @@ In this repository, you'll discover a wealth of resources designed to enhance yo
 
 #### Join the Community
 
-I invite you to join the [Cybersecurity Exclusive Besties Community](https://www.skool.com/cyberqueen/about), explore the content, contribute to discussions, and share your own insights. 
+I invite you to join the community, explore the content, contribute to discussions, and share your own insights. 
 
 Together, we can build a vibrant community of cybersecurity besties who support and inspire each other to achieve greatness in the cybersecurity field.
 
