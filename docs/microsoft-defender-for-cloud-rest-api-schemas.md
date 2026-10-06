@@ -1,8 +1,8 @@
 # Microsoft Defender for Cloud REST API Schemas and Plan Enablement
 
-> **Created by:** [Venicia Solomons](https://www.linkedin.com/in/veniciasolomons/) — Cloud and AI Security SE, Founder of Cyber Queen, and creator of [Your Cybersecurity Bestie](https://github.com/YourCybersecurityBestie).
+> **Created by:** [Venicia Solomons](https://www.linkedin.com/in/veniciasolomons/) — Cloud and AI Security SE, Founder of Cyber Queen.
 >
-> **Perspective and independence:** I wrote this guide from the perspective of my Cloud and AI Security SE role, combining practical field experience with research from official Microsoft Learn documentation and Microsoft Defender for Cloud REST API references. The analysis and guidance are my own and do not constitute official Microsoft documentation, a product statement, or a support commitment.
+> **Perspective and independence:** Guidecombining practical field experience with research from official Microsoft Learn documentation and Microsoft Defender for Cloud REST API references. The analysis and guidance are my own and do not constitute official Microsoft documentation, a product statement, or a support commitment.
 >
 > **Last accuracy review:** October 6, 2026<br>
 > **Plan API baseline:** Latest stable `Microsoft.Security/pricings` REST API version `2024-01-01` (`2025-10-01-preview` is available as a preview)
