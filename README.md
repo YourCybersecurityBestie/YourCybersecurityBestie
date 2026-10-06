@@ -52,6 +52,9 @@ Thank you for being a part of Cyber Queen. Let's level up your cybersecurity car
 ### Access My Wiki's
 * [Cybersecurity Career Researching 🔍](https://github.com/YourCybersecurityBestie/YourCybersecurityBestie/wiki/Cybersecurity-Career-Researching-%F0%9F%94%8D)
 
-<a href='https://github.com/pricing'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/pro.gif' width='20' height='20'></a> 
+### Cloud Security Deep Dives
 
+* [Microsoft Defender for Cloud REST API Schemas and Plan Enablement](docs/microsoft-defender-for-cloud-rest-api-schemas.md)
+
+<a href='https://github.com/pricing'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/pro.gif' width='20' height='20'></a> 
 
