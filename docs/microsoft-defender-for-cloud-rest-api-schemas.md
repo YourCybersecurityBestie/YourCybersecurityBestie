@@ -1,5 +1,12 @@
 # Microsoft Defender for Cloud REST API Schemas and Plan Enablement
 
+> **Created by:** [Venicia Solomons](https://www.linkedin.com/in/veniciasolomons/) — Founder of [Cyber Queen](https://www.cyberqueen.org), CISSP, cloud security professional, and creator of [Your Cybersecurity Bestie](https://github.com/YourCybersecurityBestie).
+>
+> **Research basis:** This independently authored technical guide is based primarily on official Microsoft Learn documentation and Microsoft Defender for Cloud REST API reference material. It is a community resource and is not official Microsoft documentation.
+>
+> **Last accuracy review:** October 6, 2026<br>
+> **Plan API baseline:** Stable `Microsoft.Security/pricings` API version `2024-01-01`
+
 Microsoft Defender for Cloud does not use one schema for every piece of data, but it also does not define a completely separate schema for every Defender plan.
 
 The most accurate model is:
@@ -7,6 +14,14 @@ The most accurate model is:
 1. **Plan configuration has one common schema.** Defender plans are represented by `Microsoft.Security/pricings`.
 2. **Security data has a schema per data family.** Alerts, assessments, sub-assessments, software inventory, SQL vulnerability results, secure scores, and compliance data use different REST resources.
 3. **Workload-specific details can appear inside a common schema.** For example, VM and SQL vulnerability findings share the sub-assessment envelope, but their `additionalData` differs.
+
+## Scope and accuracy notes
+
+- This guide focuses on Azure Resource Manager requests to the public Azure management endpoint, `https://management.azure.com`.
+- The JSON samples are illustrative and use documented response fields. They are not exports from a specific customer tenant.
+- `2024-01-01` is the stable API version used here for the Pricings operations. Other Defender for Cloud resource families have their own API versions.
+- Defender for Cloud and its REST models evolve. Pin API versions in production integrations and review the linked Microsoft Learn definitions before adopting a newer version.
+- Multicloud onboarding and provider-specific data available through security connectors are outside the main scope of this guide.
 
 ## Short answer
 
@@ -19,7 +34,7 @@ The most accurate model is:
 
 ## 1. Common schema for Defender plan enablement
 
-All Defender plans use the `Microsoft.Security/pricings` resource. The plan is identified by its `name`, while its configuration is stored in `properties`.
+Azure-scope Defender plan pricing configurations exposed through Azure Resource Manager use the `Microsoft.Security/pricings` resource. The plan is identified by its `name`, while its configuration is stored in `properties`.
 
 At subscription scope, retrieve all plan configurations with:
 
@@ -28,7 +43,7 @@ GET https://management.azure.com/subscriptions/{subscriptionId}/providers/Micros
 Authorization: Bearer {access-token}
 ```
 
-A response can look like this:
+An illustrative response using fields from the documented model can look like this:
 
 ```json
 {
@@ -38,7 +53,7 @@ A response can look like this:
       "name": "VirtualMachines",
       "type": "Microsoft.Security/pricings",
       "properties": {
-        "enablementTime": "2026-01-15T10:30:00Z",
+        "enablementTime": "2023-03-01T12:42:42.1921106Z",
         "enforce": "False",
         "freeTrialRemainingTime": "PT0S",
         "pricingTier": "Standard",
@@ -61,7 +76,7 @@ A response can look like this:
       "name": "SqlServers",
       "type": "Microsoft.Security/pricings",
       "properties": {
-        "enablementTime": "2026-01-15T10:30:00Z",
+        "enablementTime": "2023-03-01T12:42:42.1921106Z",
         "enforce": "False",
         "freeTrialRemainingTime": "PT0S",
         "pricingTier": "Standard",
@@ -86,7 +101,7 @@ A response can look like this:
 | Field | Meaning |
 | --- | --- |
 | `name` | Defender plan identifier, such as `VirtualMachines`, `SqlServers`, or `SqlServerVirtualMachines`. |
-| `pricingTier` | `Standard` means the paid Defender plan is enabled at the queried scope. `Free` means the paid plan is not enabled at that scope. |
+| `pricingTier` | `Standard` means the paid Defender plan is enabled at the queried scope. `Free` means the paid plan is not enabled at that scope; it does not mean that all free Defender for Cloud capabilities, such as Foundational CSPM, are absent. |
 | `subPlan` | Selected plan level when the plan offers multiple levels. Defender for Servers uses `P1` or `P2`. |
 | `extensions` | Optional capabilities within a plan, such as agentless VM scanning. |
 | `enablementTime` | Last available timestamp at which `pricingTier` was set to `Standard`. |
@@ -103,10 +118,11 @@ At minimum, inspect:
 | Plan name | Protection represented |
 | --- | --- |
 | `VirtualMachines` | Defender for Servers |
-| `SqlServers` | Defender for Azure SQL databases |
-| `SqlServerVirtualMachines` | Defender for SQL Server on machines |
+| `SqlServers` | Defender for Azure SQL Databases |
+| `SqlServerVirtualMachines` | Defender for SQL servers on machines |
+| `OpenSourceRelationalDatabases` | Defender protection for supported open-source relational databases |
 
-Depending on the environment, `OpenSourceRelationalDatabases` and other database plan names might also be relevant.
+These are Azure Resource Manager pricing resource names, not the display names necessarily shown in every portal experience. Other database plan names might also be relevant depending on the protected resource types.
 
 ## 2. Enabled does not always mean fully covered
 
@@ -129,6 +145,8 @@ This means the plan is enabled at subscription scope, but the effective configur
 | `Free` | `PartiallyCovered` | The subscription plan is disabled, but some resources can have resource-level enablement. |
 
 `resourcesCoverageStatus` is available at subscription scope. Its possible values are `FullyCovered`, `PartiallyCovered`, and `NotCovered`.
+
+The last row is a possible interpretation of the two fields, not a separate documented pricing state. Microsoft documents `pricingTier` as the subscription plan status and `resourcesCoverageStatus` as the effective coverage summary that accounts for resource-level differences.
 
 ## 3. Resource-level configuration and inheritance
 
@@ -162,6 +180,8 @@ At resource scope:
 - `inheritedFrom` identifies the parent scope. It is `null` when the configuration is not inherited.
 
 Resource-level pricing support is not a universal mechanism for every resource and Defender plan. The API documentation specifically identifies VMs, VM scale sets, and Arc machines as supported resource types.
+
+An inherited resource can report the subscription's `P2` configuration. When setting an explicit `VirtualMachines` resource-level configuration, the 2024-01-01 schema documentation states that only the `P1` subplan is supported.
 
 ## 4. Retrieve plan enablement with Azure CLI
 
@@ -261,7 +281,7 @@ This envelope is common, but the contents of `properties` are not universal.
 
 ## 6. Alerts share an alert schema
 
-VM, SQL, container, storage, and other Defender alerts use the Alerts API model:
+Alerts returned by the Defender for Cloud Alerts API use the Alerts API model regardless of which enabled protection generated them:
 
 ```json
 {
@@ -276,8 +296,7 @@ VM, SQL, container, storage, and other Defender alerts use the Alerts API model:
     "compromisedEntity": "vm01",
     "resourceIdentifiers": [],
     "entities": [],
-    "extendedProperties": {},
-    "supportingEvidence": {}
+    "extendedProperties": {}
   }
 }
 ```
@@ -291,7 +310,7 @@ Fields such as `alertType`, `severity`, `status`, and `resourceIdentifiers` form
 
 ## 7. Recommendations share the assessment schema
 
-Defender for Cloud recommendations and resource health results are exposed as assessments:
+Defender for Cloud recommendation results and resource security assessments are exposed through the Assessments API:
 
 ```json
 {
@@ -306,8 +325,8 @@ Defender for Cloud recommendations and resource health results are exposed as as
     },
     "status": {
       "code": "Unhealthy",
-      "statusChangeDate": "2026-10-01T12:00:00Z",
-      "firstEvaluationDate": "2026-09-01T12:00:00Z"
+      "statusChangeDate": "2023-04-12T09:07:18.6759138Z",
+      "firstEvaluationDate": "2023-04-12T09:07:18.6759138Z"
     },
     "additionalData": {}
   }
@@ -339,7 +358,7 @@ Detailed vulnerability or recommendation findings use a common sub-assessment en
     "additionalData": {
       "assessedResourceType": "SqlServerVulnerability"
     },
-    "timeGenerated": "2026-10-01T12:00:00Z"
+    "timeGenerated": "2023-06-23T12:20:08.7644808Z"
   }
 }
 ```
@@ -351,6 +370,8 @@ Detailed vulnerability or recommendation findings use a common sub-assessment en
 - `ContainerRegistryVulnerability`
 
 This is a shared envelope with typed workload-specific details, not a completely separate top-level schema for each Defender plan.
+
+The documented discriminator values belong to the referenced sub-assessment model and can change in later API or SDK versions. Consumers should retain unknown discriminator values and unknown properties rather than rejecting the complete finding.
 
 ## 9. Export destination also affects the schema
 
@@ -411,10 +432,11 @@ You need:
 - [Pricings - List](https://learn.microsoft.com/rest/api/defenderforcloud-composite/pricings/list?view=rest-defenderforcloud-composite-latest)
 - [Pricings - Get](https://learn.microsoft.com/rest/api/defenderforcloud-composite/pricings/get?view=rest-defenderforcloud-composite-latest)
 - [Microsoft.Security/pricings 2024-01-01 schema](https://learn.microsoft.com/azure/templates/microsoft.security/2024-01-01/pricings)
+- [What is Cloud Security Posture Management (CSPM)](https://learn.microsoft.com/azure/defender-for-cloud/concept-cloud-security-posture-management)
+- [Overview of Microsoft Defender for Databases](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-databases-introduction)
 - [Alerts - List](https://learn.microsoft.com/rest/api/defenderforcloud-composite/alerts/list?view=rest-defenderforcloud-composite-latest)
 - [Assessments - List](https://learn.microsoft.com/rest/api/defenderforcloud-composite/assessments/list?view=rest-defenderforcloud-composite-latest)
 - [Sub-assessments - List](https://learn.microsoft.com/rest/api/defenderforcloud-composite/sub-assessments/list?view=rest-defenderforcloud-composite-latest)
 - [Defender for Cloud alert schemas](https://learn.microsoft.com/azure/defender-for-cloud/alerts-schemas)
 - [Export alerts and recommendations with continuous export](https://learn.microsoft.com/azure/defender-for-cloud/benefits-of-continuous-export)
 - [Software inventories - List by extended resource](https://learn.microsoft.com/rest/api/defenderforcloud-composite/software-inventories/list-by-extended-resource?view=rest-defenderforcloud-composite-latest)
-
