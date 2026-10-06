@@ -1,11 +1,11 @@
 # Microsoft Defender for Cloud REST API Schemas and Plan Enablement
 
-> **Created by:** [Venicia Solomons](https://www.linkedin.com/in/veniciasolomons/) — Founder of [Cyber Queen](https://www.cyberqueen.org), CISSP, cloud security professional, and creator of [Your Cybersecurity Bestie](https://github.com/YourCybersecurityBestie).
+> **Created by:** [Venicia Solomons](https://www.linkedin.com/in/veniciasolomons/) — Cloud and AI Security SE, Founder of Cyber Queen, and creator of [Your Cybersecurity Bestie](https://github.com/YourCybersecurityBestie).
 >
-> **Research basis:** This independently authored technical guide is based primarily on official Microsoft Learn documentation and Microsoft Defender for Cloud REST API reference material. It is a community resource and is not official Microsoft documentation.
+> **Perspective and independence:** I wrote this guide from the perspective of my Cloud and AI Security SE role, combining practical field experience with research from official Microsoft Learn documentation and Microsoft Defender for Cloud REST API references. The analysis and guidance are my own and do not constitute official Microsoft documentation, a product statement, or a support commitment.
 >
 > **Last accuracy review:** October 6, 2026<br>
-> **Plan API baseline:** Stable `Microsoft.Security/pricings` API version `2024-01-01`
+> **Plan API baseline:** Latest stable `Microsoft.Security/pricings` REST API version `2024-01-01` (`2025-10-01-preview` is available as a preview)
 
 Microsoft Defender for Cloud does not use one schema for every piece of data, but it also does not define a completely separate schema for every Defender plan.
 
@@ -19,7 +19,8 @@ The most accurate model is:
 
 - This guide focuses on Azure Resource Manager requests to the public Azure management endpoint, `https://management.azure.com`.
 - The JSON samples are illustrative and use documented response fields. They are not exports from a specific customer tenant.
-- `2024-01-01` is the stable API version used here for the Pricings operations. Other Defender for Cloud resource families have their own API versions.
+- `2024-01-01` is the latest stable REST API version currently documented for the Pricings list and get operations, and it is the version used throughout this guide.
+- A newer `2025-10-01-preview` resource schema is available. Because it is a preview rather than a stable REST baseline, this guide does not use it for production examples.
 - Defender for Cloud and its REST models evolve. Pin API versions in production integrations and review the linked Microsoft Learn definitions before adopting a newer version.
 - Multicloud onboarding and provider-specific data available through security connectors are outside the main scope of this guide.
 
@@ -35,6 +36,16 @@ The most accurate model is:
 ## 1. Common schema for Defender plan enablement
 
 Azure-scope Defender plan pricing configurations exposed through Azure Resource Manager use the `Microsoft.Security/pricings` resource. The plan is identified by its `name`, while its configuration is stored in `properties`.
+
+### API version choice
+
+As of the accuracy-review date:
+
+- `2024-01-01` is the latest stable API version documented by the Defender for Cloud Pricings REST list and get operations.
+- `2025-10-01-preview` is the newest published resource schema, but its `preview` designation means it should not automatically replace the stable version in production integrations.
+- The preview adds fields including `managedBy`, `originatedFrom`, and `securityOperatorResourceId`, and changes the resource model in other ways. Adopt it only when those preview capabilities are required and after testing the response contract.
+
+This distinction explains why the examples below intentionally use `api-version=2024-01-01`.
 
 At subscription scope, retrieve all plan configurations with:
 
@@ -432,6 +443,8 @@ You need:
 - [Pricings - List](https://learn.microsoft.com/rest/api/defenderforcloud-composite/pricings/list?view=rest-defenderforcloud-composite-latest)
 - [Pricings - Get](https://learn.microsoft.com/rest/api/defenderforcloud-composite/pricings/get?view=rest-defenderforcloud-composite-latest)
 - [Microsoft.Security/pricings 2024-01-01 schema](https://learn.microsoft.com/azure/templates/microsoft.security/2024-01-01/pricings)
+- [Microsoft.Security/pricings 2025-10-01-preview schema](https://learn.microsoft.com/azure/templates/microsoft.security/2025-10-01-preview/pricings)
+- [Microsoft.Security/pricings API version change log](https://learn.microsoft.com/azure/templates/microsoft.security/change-log/pricings)
 - [What is Cloud Security Posture Management (CSPM)](https://learn.microsoft.com/azure/defender-for-cloud/concept-cloud-security-posture-management)
 - [Overview of Microsoft Defender for Databases](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-databases-introduction)
 - [Alerts - List](https://learn.microsoft.com/rest/api/defenderforcloud-composite/alerts/list?view=rest-defenderforcloud-composite-latest)
